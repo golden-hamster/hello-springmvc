@@ -9,9 +9,8 @@ public class ResponseViewController {
 
     @RequestMapping("/response-view-v1")
     public ModelAndView responseViewV1(){
-        ModelAndView mav = new ModelAndView("response.hello")
+        ModelAndView mav = new ModelAndView("response/hello")
                 .addObject("data", "hello!");
-        System.out.println("ResponseViewController.responseViewV1");
         return mav;
     }
 }
